@@ -123,7 +123,6 @@ app.post('/account/delete', passportConfig.isAuthenticated, userController.postD
 app.get('/account/unlink/:provider', passportConfig.isAuthenticated, userController.getOauthUnlink);
 
 app.get('/meetings/new', passportConfig.isAuthenticated, meetingController.getCreate);
-app.post('/meetings/new', passportConfig.isAuthenticated, meetingCOntroller.postCreate);
 
 /**
  * API examples routes.
